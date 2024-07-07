@@ -1,2 +1,4 @@
 # Cloth simulation
-Final project for *Introduction to C++ and Numerical Methods*
+Final project for Introduction to C++ and Numerical Methods.
+
+

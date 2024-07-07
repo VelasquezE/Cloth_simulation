@@ -177,6 +177,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cloth_simulation.dir/build.make CMakeFiles/cloth_simulation.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/physics/systemDynamics.o: src/physics/systemDynamics.cpp.o
+.PHONY : src/physics/systemDynamics.o
+
+# target to build an object file
+src/physics/systemDynamics.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cloth_simulation.dir/build.make CMakeFiles/cloth_simulation.dir/src/physics/systemDynamics.cpp.o
+.PHONY : src/physics/systemDynamics.cpp.o
+
+src/physics/systemDynamics.i: src/physics/systemDynamics.cpp.i
+.PHONY : src/physics/systemDynamics.i
+
+# target to preprocess a source file
+src/physics/systemDynamics.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cloth_simulation.dir/build.make CMakeFiles/cloth_simulation.dir/src/physics/systemDynamics.cpp.i
+.PHONY : src/physics/systemDynamics.cpp.i
+
+src/physics/systemDynamics.s: src/physics/systemDynamics.cpp.s
+.PHONY : src/physics/systemDynamics.s
+
+# target to generate assembly for a file
+src/physics/systemDynamics.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cloth_simulation.dir/build.make CMakeFiles/cloth_simulation.dir/src/physics/systemDynamics.cpp.s
+.PHONY : src/physics/systemDynamics.cpp.s
+
 src/rendering.o: src/rendering.cpp.o
 .PHONY : src/rendering.o
 
@@ -240,6 +264,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/physics/systemDynamics.o"
+	@echo "... src/physics/systemDynamics.i"
+	@echo "... src/physics/systemDynamics.s"
 	@echo "... src/rendering.o"
 	@echo "... src/rendering.i"
 	@echo "... src/rendering.s"

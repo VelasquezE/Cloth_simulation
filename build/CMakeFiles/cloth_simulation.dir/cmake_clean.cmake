@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/cloth_simulation.dir/src/glad.c.o.d"
   "CMakeFiles/cloth_simulation.dir/src/main.cpp.o"
   "CMakeFiles/cloth_simulation.dir/src/main.cpp.o.d"
+  "CMakeFiles/cloth_simulation.dir/src/physics/systemDynamics.cpp.o"
+  "CMakeFiles/cloth_simulation.dir/src/physics/systemDynamics.cpp.o.d"
   "CMakeFiles/cloth_simulation.dir/src/rendering.cpp.o"
   "CMakeFiles/cloth_simulation.dir/src/rendering.cpp.o.d"
   "CMakeFiles/cloth_simulation.dir/src/shaders/Shader.cpp.o"

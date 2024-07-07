@@ -97,24 +97,10 @@ CMakeFiles/cloth_simulation.dir/src/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/cloth_simulation.dir/src/glad.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/mnt/c/Users/estev/OneDrive - Universidad Nacional de Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Cloth_simulation/src/glad.c" -o CMakeFiles/cloth_simulation.dir/src/glad.c.s
 
-CMakeFiles/cloth_simulation.dir/src/main.cpp.o: CMakeFiles/cloth_simulation.dir/flags.make
-CMakeFiles/cloth_simulation.dir/src/main.cpp.o: /mnt/c/Users/estev/OneDrive\ -\ Universidad\ Nacional\ de\ Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Cloth_simulation/src/main.cpp
-CMakeFiles/cloth_simulation.dir/src/main.cpp.o: CMakeFiles/cloth_simulation.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/estev/OneDrive - Universidad Nacional de Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Cloth_simulation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/cloth_simulation.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cloth_simulation.dir/src/main.cpp.o -MF CMakeFiles/cloth_simulation.dir/src/main.cpp.o.d -o CMakeFiles/cloth_simulation.dir/src/main.cpp.o -c "/mnt/c/Users/estev/OneDrive - Universidad Nacional de Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Cloth_simulation/src/main.cpp"
-
-CMakeFiles/cloth_simulation.dir/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cloth_simulation.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/estev/OneDrive - Universidad Nacional de Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Cloth_simulation/src/main.cpp" > CMakeFiles/cloth_simulation.dir/src/main.cpp.i
-
-CMakeFiles/cloth_simulation.dir/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cloth_simulation.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/estev/OneDrive - Universidad Nacional de Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Cloth_simulation/src/main.cpp" -o CMakeFiles/cloth_simulation.dir/src/main.cpp.s
-
 CMakeFiles/cloth_simulation.dir/src/shaders/Shader.cpp.o: CMakeFiles/cloth_simulation.dir/flags.make
 CMakeFiles/cloth_simulation.dir/src/shaders/Shader.cpp.o: /mnt/c/Users/estev/OneDrive\ -\ Universidad\ Nacional\ de\ Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Cloth_simulation/src/shaders/Shader.cpp
 CMakeFiles/cloth_simulation.dir/src/shaders/Shader.cpp.o: CMakeFiles/cloth_simulation.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/estev/OneDrive - Universidad Nacional de Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Cloth_simulation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/cloth_simulation.dir/src/shaders/Shader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/estev/OneDrive - Universidad Nacional de Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Cloth_simulation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/cloth_simulation.dir/src/shaders/Shader.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cloth_simulation.dir/src/shaders/Shader.cpp.o -MF CMakeFiles/cloth_simulation.dir/src/shaders/Shader.cpp.o.d -o CMakeFiles/cloth_simulation.dir/src/shaders/Shader.cpp.o -c "/mnt/c/Users/estev/OneDrive - Universidad Nacional de Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Cloth_simulation/src/shaders/Shader.cpp"
 
 CMakeFiles/cloth_simulation.dir/src/shaders/Shader.cpp.i: cmake_force
@@ -125,25 +111,55 @@ CMakeFiles/cloth_simulation.dir/src/shaders/Shader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cloth_simulation.dir/src/shaders/Shader.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/estev/OneDrive - Universidad Nacional de Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Cloth_simulation/src/shaders/Shader.cpp" -o CMakeFiles/cloth_simulation.dir/src/shaders/Shader.cpp.s
 
+CMakeFiles/cloth_simulation.dir/src/physics/systemDynamics.cpp.o: CMakeFiles/cloth_simulation.dir/flags.make
+CMakeFiles/cloth_simulation.dir/src/physics/systemDynamics.cpp.o: /mnt/c/Users/estev/OneDrive\ -\ Universidad\ Nacional\ de\ Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Cloth_simulation/src/physics/systemDynamics.cpp
+CMakeFiles/cloth_simulation.dir/src/physics/systemDynamics.cpp.o: CMakeFiles/cloth_simulation.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/estev/OneDrive - Universidad Nacional de Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Cloth_simulation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/cloth_simulation.dir/src/physics/systemDynamics.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cloth_simulation.dir/src/physics/systemDynamics.cpp.o -MF CMakeFiles/cloth_simulation.dir/src/physics/systemDynamics.cpp.o.d -o CMakeFiles/cloth_simulation.dir/src/physics/systemDynamics.cpp.o -c "/mnt/c/Users/estev/OneDrive - Universidad Nacional de Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Cloth_simulation/src/physics/systemDynamics.cpp"
+
+CMakeFiles/cloth_simulation.dir/src/physics/systemDynamics.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cloth_simulation.dir/src/physics/systemDynamics.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/estev/OneDrive - Universidad Nacional de Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Cloth_simulation/src/physics/systemDynamics.cpp" > CMakeFiles/cloth_simulation.dir/src/physics/systemDynamics.cpp.i
+
+CMakeFiles/cloth_simulation.dir/src/physics/systemDynamics.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cloth_simulation.dir/src/physics/systemDynamics.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/estev/OneDrive - Universidad Nacional de Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Cloth_simulation/src/physics/systemDynamics.cpp" -o CMakeFiles/cloth_simulation.dir/src/physics/systemDynamics.cpp.s
+
+CMakeFiles/cloth_simulation.dir/src/main.cpp.o: CMakeFiles/cloth_simulation.dir/flags.make
+CMakeFiles/cloth_simulation.dir/src/main.cpp.o: /mnt/c/Users/estev/OneDrive\ -\ Universidad\ Nacional\ de\ Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Cloth_simulation/src/main.cpp
+CMakeFiles/cloth_simulation.dir/src/main.cpp.o: CMakeFiles/cloth_simulation.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/estev/OneDrive - Universidad Nacional de Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Cloth_simulation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/cloth_simulation.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/cloth_simulation.dir/src/main.cpp.o -MF CMakeFiles/cloth_simulation.dir/src/main.cpp.o.d -o CMakeFiles/cloth_simulation.dir/src/main.cpp.o -c "/mnt/c/Users/estev/OneDrive - Universidad Nacional de Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Cloth_simulation/src/main.cpp"
+
+CMakeFiles/cloth_simulation.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/cloth_simulation.dir/src/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/estev/OneDrive - Universidad Nacional de Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Cloth_simulation/src/main.cpp" > CMakeFiles/cloth_simulation.dir/src/main.cpp.i
+
+CMakeFiles/cloth_simulation.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/cloth_simulation.dir/src/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/estev/OneDrive - Universidad Nacional de Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Cloth_simulation/src/main.cpp" -o CMakeFiles/cloth_simulation.dir/src/main.cpp.s
+
 # Object files for target cloth_simulation
 cloth_simulation_OBJECTS = \
 "CMakeFiles/cloth_simulation.dir/src/rendering.cpp.o" \
 "CMakeFiles/cloth_simulation.dir/src/glad.c.o" \
-"CMakeFiles/cloth_simulation.dir/src/main.cpp.o" \
-"CMakeFiles/cloth_simulation.dir/src/shaders/Shader.cpp.o"
+"CMakeFiles/cloth_simulation.dir/src/shaders/Shader.cpp.o" \
+"CMakeFiles/cloth_simulation.dir/src/physics/systemDynamics.cpp.o" \
+"CMakeFiles/cloth_simulation.dir/src/main.cpp.o"
 
 # External object files for target cloth_simulation
 cloth_simulation_EXTERNAL_OBJECTS =
 
 cloth_simulation: CMakeFiles/cloth_simulation.dir/src/rendering.cpp.o
 cloth_simulation: CMakeFiles/cloth_simulation.dir/src/glad.c.o
-cloth_simulation: CMakeFiles/cloth_simulation.dir/src/main.cpp.o
 cloth_simulation: CMakeFiles/cloth_simulation.dir/src/shaders/Shader.cpp.o
+cloth_simulation: CMakeFiles/cloth_simulation.dir/src/physics/systemDynamics.cpp.o
+cloth_simulation: CMakeFiles/cloth_simulation.dir/src/main.cpp.o
 cloth_simulation: CMakeFiles/cloth_simulation.dir/build.make
 cloth_simulation: /usr/lib/x86_64-linux-gnu/libGLX.so
 cloth_simulation: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 cloth_simulation: CMakeFiles/cloth_simulation.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/mnt/c/Users/estev/OneDrive - Universidad Nacional de Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Cloth_simulation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable cloth_simulation"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/mnt/c/Users/estev/OneDrive - Universidad Nacional de Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Cloth_simulation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable cloth_simulation"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cloth_simulation.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
