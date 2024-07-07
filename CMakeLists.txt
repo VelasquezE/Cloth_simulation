@@ -8,8 +8,10 @@ add_executable(${PROJECT_NAME}
                src/rendering.h
                src/rendering.cpp
                src/glad.c
-               src/main.cpp
                src/shaders/Shader.cpp
+               src/physics/systemDynamics.h
+               src/physics/systemDynamics.cpp
+               src/main.cpp
                )
 
 target_include_directories(${PROJECT_NAME} PRIVATE dependencies)
