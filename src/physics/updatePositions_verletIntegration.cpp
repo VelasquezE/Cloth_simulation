@@ -1,13 +1,39 @@
-/*
-f(t + h) = 2 * f(t) - f(t - h) + h^{2} * a(t)
+#include "updatePositions_verletIntegration.h"
 
-- we do not use velocity explicity
-- we must have two position values
+void initialStep(std::vector<Particle> &system, const float &h)
+{
+    for (auto &p : system)
+    {
+        for (int ii = 0; ii < 2; ii++)
+        {
+            // Save current position to previous position
+            p.previousPosition[ii] = p.actualPosition[ii];
 
-function verletIntegration(particles, h)
-         for all particles p do
-         positionCopy <- p.position
-         p.position <- 2 * p.position - p.previousPosition + h^{2} p.getAcceleration()
-         p.previousPosition <- positionCopy
+            p.actualPosition[ii] = p.actualPosition[ii] + (p.initialVelocity[ii] * h) +
+                                   0.5 * (p.force[ii] / p.mass) * h * h;
+        }
+    }
+}
 
-*/
+void verletIntegration(std::vector<Particle> &system, const float &h)
+{
+    for (auto &p : system)
+    {
+        // Avoid updating a fixed particle
+        if (p.fixed)
+        {
+            break;
+        }
+        // Temporal vector to save new position
+        glm::vec2 newPosition = glm::vec2(0.0);
+
+        for (int ii = 0; ii < 2; ii++)
+        {
+            newPosition[ii] = (2 * p.actualPosition[ii]) - p.previousPosition[ii] +
+                              (h * h * (p.force[ii] / p.mass));
+        }
+
+        p.previousPosition = p.actualPosition;
+        p.actualPosition = newPosition;
+    }
+}

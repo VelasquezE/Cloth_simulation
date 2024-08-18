@@ -6,14 +6,23 @@ void initializeParticles(const int n, std::vector<Particle> &system, const float
 
     for (int ii = 0; ii <= n; ii++)
     {
+        // Prevent first particle for moving
         if (ii == 0)
         {
             system[ii].fixed = true;
         }
+
+        // Initialize position
         system[ii].actualPosition.x = 0.0f;
         system[ii].actualPosition.y = yPosition;
 
         yPosition -= particleSeparation;
+
+        // Give velocity to last particle
+        if (ii == n)
+        {
+            system[ii].initialVelocity.x = 0.539; // (m/s)
+        }
     }
 }
 
@@ -26,16 +35,19 @@ void vertexArrayCreation(const int n, const std::vector<Particle> system,
     }
 }
 
-/*
+void giveForces(std::vector<Particle> &system)
+{
+    // Reset forces
+    for (auto &particle : system)
+    {
+        particle.force = glm::vec2(0.0);
+    }
 
-function giveSecondInitialPosition
-         Estimate second initial position for Verlet
-         x(h) = x(0) + v(0) * h + 1/2 * a(0) * h^{2}
+    // Gravity
+    float G = 9.81; // m/s^2
 
-function computeForce
-         This function must recibe the system
-         and fill the force on each particle
-         - gravity is the "only" force acting over each particle
-         int G = 10; We can add a map
-         F = ma = -mg
-*/
+    for (auto &particle : system)
+    {
+        particle.force.y -= particle.mass * G;
+    }
+}

@@ -1,13 +1,17 @@
 #include "rendering.h"
 #include "libraries.h"
 #include "physics/systemDynamics.h"
+#include "physics/updatePositions_verletIntegration.h"
 
 int main(void)
 {
     initializeGLFW();
 
-    const int N = 100; // Has to be an even value
-    const float particleSeparation = 0.0125;
+    // Constants
+    int N = 100; // Has to be an even value
+    float particleSeparation = 0.0125;
+
+    // Create system
     std::vector<Particle> system(N);
     initializeParticles(N, system, particleSeparation);
 
@@ -47,11 +51,18 @@ int main(void)
     glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, sizeof(glm::vec2), (void *)0);
     glEnableVertexAttribArray(0);
 
+    // Initial step for Verlet
+    giveForces(system);
+    // initialStep(system, h);
+
     while (!glfwWindowShouldClose(window))
     {
         glClearColor(0.733f, 0.733f, 0.733f, 1.0f);
         processInput(window);
 
+        // Update the system
+
+        // Draw
         glClear(GL_COLOR_BUFFER_BIT);
 
         shaderProgram.use();
