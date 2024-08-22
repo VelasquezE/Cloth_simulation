@@ -1,5 +1,5 @@
-CMakeFiles/cloth_simulation.dir/src/glad.c.o: \
- /mnt/c/Users/estev/OneDrive\ -\ Universidad\ Nacional\ de\ Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Cloth_simulation/src/glad.c \
+CMakeFiles/rope_simulation.dir/src/glad.c.o: \
+ /mnt/c/Users/estev/OneDrive\ -\ Universidad\ Nacional\ de\ Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Rope_simulation/src/glad.c \
  /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -51,8 +51,8 @@ CMakeFiles/cloth_simulation.dir/src/glad.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/strings.h \
- /mnt/c/Users/estev/OneDrive\ -\ Universidad\ Nacional\ de\ Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Cloth_simulation/dependencies/glad/glad.h \
- /mnt/c/Users/estev/OneDrive\ -\ Universidad\ Nacional\ de\ Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Cloth_simulation/dependencies/KHR/khrplatform.h \
+ /mnt/c/Users/estev/OneDrive\ -\ Universidad\ Nacional\ de\ Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Rope_simulation/dependencies/glad/glad.h \
+ /mnt/c/Users/estev/OneDrive\ -\ Universidad\ Nacional\ de\ Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Rope_simulation/dependencies/KHR/khrplatform.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h /usr/include/dlfcn.h \

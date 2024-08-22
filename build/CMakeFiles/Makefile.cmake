@@ -7,7 +7,7 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/mnt/c/Users/estev/OneDrive - Universidad Nacional de Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Cloth_simulation/CMakeLists.txt"
+  "/mnt/c/Users/estev/OneDrive - Universidad Nacional de Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Rope_simulation/CMakeLists.txt"
   "CMakeFiles/3.29.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.29.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.29.3/CMakeSystem.cmake"
@@ -47,5 +47,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/cloth_simulation.dir/DependInfo.cmake"
+  "CMakeFiles/rope_simulation.dir/DependInfo.cmake"
   )

@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/c/Users/estev/OneDrive - Universidad Nacional de Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Cloth_simulation
+# Install script for directory: /mnt/c/Users/estev/OneDrive - Universidad Nacional de Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Rope_simulation
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/c/Users/estev/OneDrive - Universidad Nacional de Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Cloth_simulation/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/mnt/c/Users/estev/OneDrive - Universidad Nacional de Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Rope_simulation/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

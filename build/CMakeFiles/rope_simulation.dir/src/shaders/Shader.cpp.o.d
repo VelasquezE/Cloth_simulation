@@ -1,9 +1,9 @@
-CMakeFiles/cloth_simulation.dir/src/shaders/Shader.cpp.o: \
- /mnt/c/Users/estev/OneDrive\ -\ Universidad\ Nacional\ de\ Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Cloth_simulation/src/shaders/Shader.cpp \
+CMakeFiles/rope_simulation.dir/src/shaders/Shader.cpp.o: \
+ /mnt/c/Users/estev/OneDrive\ -\ Universidad\ Nacional\ de\ Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Rope_simulation/src/shaders/Shader.cpp \
  /usr/include/stdc-predef.h \
- /mnt/c/Users/estev/OneDrive\ -\ Universidad\ Nacional\ de\ Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Cloth_simulation/src/shaders/Shader.h \
- /mnt/c/Users/estev/OneDrive\ -\ Universidad\ Nacional\ de\ Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Cloth_simulation/dependencies/glad/glad.h \
- /mnt/c/Users/estev/OneDrive\ -\ Universidad\ Nacional\ de\ Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Cloth_simulation/dependencies/KHR/khrplatform.h \
+ /mnt/c/Users/estev/OneDrive\ -\ Universidad\ Nacional\ de\ Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Rope_simulation/src/shaders/Shader.h \
+ /mnt/c/Users/estev/OneDrive\ -\ Universidad\ Nacional\ de\ Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Rope_simulation/dependencies/glad/glad.h \
+ /mnt/c/Users/estev/OneDrive\ -\ Universidad\ Nacional\ de\ Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Rope_simulation/dependencies/KHR/khrplatform.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -19,7 +19,7 @@ CMakeFiles/cloth_simulation.dir/src/shaders/Shader.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /mnt/c/Users/estev/OneDrive\ -\ Universidad\ Nacional\ de\ Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Cloth_simulation/dependencies/GLFW/glfw3.h \
+ /mnt/c/Users/estev/OneDrive\ -\ Universidad\ Nacional\ de\ Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Rope_simulation/dependencies/GLFW/glfw3.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
