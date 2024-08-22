@@ -1,4 +1,4 @@
-# Cloth simulation
+# Rope simulation
 Final project for Introduction to C++ and Numerical Methods.
 
 ### General objective
