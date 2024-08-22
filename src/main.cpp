@@ -52,7 +52,7 @@ int main(void)
     glEnableVertexAttribArray(0);
 
     // Initial step for Verlet
-    giveForces(system);
+    // giveForces(system);
     // initialStep(system, h);
 
     while (!glfwWindowShouldClose(window))

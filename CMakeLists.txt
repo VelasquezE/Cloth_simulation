@@ -11,6 +11,8 @@ add_executable(${PROJECT_NAME}
                src/shaders/Shader.cpp
                src/physics/systemDynamics.h
                src/physics/systemDynamics.cpp
+               src/physics/updatePositions_verletIntegration.h
+               src/physics/updatePositions_verletIntegration.cpp
                src/main.cpp
                )
 

@@ -19,10 +19,10 @@ void initializeParticles(const int n, std::vector<Particle> &system, const float
         yPosition -= particleSeparation;
 
         // Give velocity to last particle
-        if (ii == n)
-        {
-            system[ii].initialVelocity.x = 0.539; // (m/s)
-        }
+        // if (ii == n)
+        //{
+        //    system[ii].initialVelocity.x = 0.539; // (m/s)
+        //}
     }
 }
 
