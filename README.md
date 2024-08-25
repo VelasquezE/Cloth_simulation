@@ -11,4 +11,6 @@ Simulate a rope under the effect of gravity and the inner interactions between t
 4. Implement the constraint between segments using the Jakobsen method
 5. Visualize the movement of the rope using OpenGL and allowing the interaction with the user
 
+# Windows building
 
+# Linux building
