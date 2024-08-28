@@ -1,10 +1,11 @@
 #include "systemDynamics.h"
 
-void initializeParticles(const int n, std::vector<Particle> &system, const float particleSeparation)
+void initializeParticles(std::vector<Particle> &system, const float particleSeparation)
 {
+    int n = system.size();
     float yPosition = 0.5f;
 
-    for (int ii = 0; ii <= n; ii++)
+    for (int ii = 0; ii < n; ii++)
     {
         // Prevent first particle for moving
         if (ii == 0)
@@ -17,19 +18,13 @@ void initializeParticles(const int n, std::vector<Particle> &system, const float
         system[ii].actualPosition.y = yPosition;
 
         yPosition -= particleSeparation;
-
-        // Give velocity to last particle
-        // if (ii == n)
-        //{
-        //    system[ii].initialVelocity.x = 0.539; // (m/s)
-        //}
     }
 }
 
-void vertexArrayCreation(const int n, const std::vector<Particle> system,
+void vertexArrayCreation(const std::vector<Particle> &system,
                          std::vector<glm::vec2> &vertices)
 {
-    for (int ii = 0; ii <= n; ii++)
+    for (int ii = 0; ii < system.size(); ii++)
     {
         vertices[ii] = system[ii].actualPosition;
     }

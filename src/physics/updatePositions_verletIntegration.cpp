@@ -4,13 +4,16 @@ void initialStep(std::vector<Particle> &system, const float &h)
 {
     for (auto &p : system)
     {
-        for (int ii = 0; ii < 2; ii++)
+        if (!p.fixed)
         {
-            // Save current position to previous position
-            p.previousPosition[ii] = p.actualPosition[ii];
+            for (int ii = 0; ii < 2; ii++)
+            {
+                // Save current position to previous position
+                p.previousPosition[ii] = p.actualPosition[ii];
 
-            p.actualPosition[ii] = p.actualPosition[ii] + (p.initialVelocity[ii] * h) +
-                                   0.5 * (p.force[ii] / p.mass) * h * h;
+                p.actualPosition[ii] = p.actualPosition[ii] + (p.initialVelocity[ii] * h) +
+                                       (0.5 * (p.force[ii] / p.mass) * h * h);
+            }
         }
     }
 }
@@ -19,21 +22,19 @@ void verletIntegration(std::vector<Particle> &system, const float &h)
 {
     for (auto &p : system)
     {
-        // Avoid updating a fixed particle
-        if (p.fixed)
+        if (!p.fixed)
         {
-            break;
-        }
-        // Temporal vector to save new position
-        glm::vec2 newPosition = glm::vec2(0.0);
+            // Temporal vector to save new position
+            glm::vec2 newPosition = glm::vec2(0.0);
 
-        for (int ii = 0; ii < 2; ii++)
-        {
-            newPosition[ii] = (2 * p.actualPosition[ii]) - p.previousPosition[ii] +
-                              (h * h * (p.force[ii] / p.mass));
-        }
+            for (int ii = 0; ii < 2; ii++)
+            {
+                newPosition[ii] = (2 * p.actualPosition[ii]) - p.previousPosition[ii] +
+                                  (h * h * (p.force[ii] / p.mass));
+            }
 
-        p.previousPosition = p.actualPosition;
-        p.actualPosition = newPosition;
+            p.previousPosition = p.actualPosition;
+            p.actualPosition = newPosition;
+        }
     }
 }

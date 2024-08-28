@@ -8,20 +8,20 @@ int main(void)
     initializeGLFW();
 
     // Constants
-    int N = 100; // Has to be an even value
+    int N = 90;
     float particleSeparation = 0.0125;
 
     // Create system
     std::vector<Particle> system(N);
-    initializeParticles(N, system, particleSeparation);
+    initializeParticles(system, particleSeparation);
 
     std::vector<glm::vec2> vertices(N);
-    vertexArrayCreation(N, system, vertices);
+    vertexArrayCreation(system, vertices);
 
     float width = 800.0;
     float height = 800.0;
 
-    GLFWwindow *window = glfwCreateWindow(width, height, "ClothSimulation", NULL, NULL);
+    GLFWwindow *window = glfwCreateWindow(width, height, "RopeSimulation", NULL, NULL);
     checkWindowCreation(window);
     glfwMakeContextCurrent(window);
     glfwSetFramebufferSizeCallback(window, framebufferSizeCallback);
@@ -51,18 +51,43 @@ int main(void)
     glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, sizeof(glm::vec2), (void *)0);
     glEnableVertexAttribArray(0);
 
-    // Initial step for Verlet
-    // giveForces(system);
-    // initialStep(system, h);
+    // Time step variables
+    float h = 0.0f; // Delta time
+    float lastFrame = 0.0f;
+
+    // To know when to do the first step for Verlet
+    int counter = 0;
 
     while (!glfwWindowShouldClose(window))
     {
-        glClearColor(0.733f, 0.733f, 0.733f, 1.0f);
+        // Calculate delta time
+        float currentFrame = glfwGetTime();
+        h = currentFrame - lastFrame;
+        lastFrame = currentFrame;
+
+        glfwPollEvents();
+
         processInput(window);
 
         // Update the system
+        if (counter == 1) // Make initial step after static view
+        {
+            giveForces(system);
+            initialStep(system, h);
+        }
+        if (counter > 1)
+        {
+            giveForces(system);
+            verletIntegration(system, h);
+        }
 
-        // Draw
+        // Update vertex positions
+        vertexArrayCreation(system, vertices);
+        glBindBuffer(GL_ARRAY_BUFFER, VBO);
+        glBufferSubData(GL_ARRAY_BUFFER, 0, vertices.size() * sizeof(glm::vec2), vertices.data());
+
+        // Render
+        glClearColor(0.733f, 0.733f, 0.733f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
         shaderProgram.use();
@@ -71,7 +96,8 @@ int main(void)
         glDrawArrays(GL_POINTS, 0, vertices.size());
 
         glfwSwapBuffers(window);
-        glfwPollEvents();
+
+        counter++;
     }
 
     glfwTerminate();

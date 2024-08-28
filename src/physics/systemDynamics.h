@@ -12,6 +12,6 @@ struct Particle
     bool fixed{false};
 };
 
-void initializeParticles(const int n, std::vector<Particle> &system, const float particleSeparation);
-void vertexArrayCreation(const int n, const std::vector<Particle> system, std::vector<glm::vec2> &vertices);
+void initializeParticles(std::vector<Particle> &system, const float particleSeparation);
+void vertexArrayCreation(const std::vector<Particle> &system, std::vector<glm::vec2> &vertices);
 void giveForces(std::vector<Particle> &system);
