@@ -5,7 +5,7 @@ layout (triangle_strip, max_vertices = 4) out; //Primitive output
 
 void buildQuads(vec4 vertexPosition)
 {
-    float halfSeparation = 0.00625;
+    float halfSeparation = 0.004;
     gl_Position = vertexPosition + vec4(-halfSeparation, -halfSeparation, 0.0, 0.0);
     EmitVertex();
     gl_Position = vertexPosition + vec4(halfSeparation, -halfSeparation, 0.0, 0.0);

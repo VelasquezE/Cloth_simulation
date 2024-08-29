@@ -2,14 +2,15 @@
 #include "libraries.h"
 #include "physics/systemDynamics.h"
 #include "physics/updatePositions_verletIntegration.h"
+#include "physics/constraints_JakobsenMethod.h"
 
 int main(void)
 {
     initializeGLFW();
 
     // Constants
-    int N = 90;
-    float particleSeparation = 0.0125;
+    int N = 130;
+    float particleSeparation = 0.008;
 
     // Create system
     std::vector<Particle> system(N);
@@ -70,15 +71,18 @@ int main(void)
         processInput(window);
 
         // Update the system
+
         if (counter == 1) // Make initial step after static view
         {
             giveForces(system);
             initialStep(system, h);
+            jakobsen(system, particleSeparation, N);
         }
         if (counter > 1)
         {
             giveForces(system);
             verletIntegration(system, h);
+            jakobsen(system, particleSeparation, N);
         }
 
         // Update vertex positions

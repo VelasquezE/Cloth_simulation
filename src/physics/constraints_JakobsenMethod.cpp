@@ -1,40 +1,55 @@
 #include "constraints_JakobsenMethod.h"
 
-
-void relaxConstraint(const int iter, glm::vec2 &part1, glm::vec2 &part2,const float d)
+void relaxConstraint(Particle &part1, Particle &part2, const float d)
 {
-    //the vector that I'm proposing goes from particle 1 to particle 2
-    float separation = std::sqrt((part2.x-part1.x)*(part2.x-part1.x) + (part2.y-part1.y)*(part2.y-part1.y));
-    float direcx = (part2.x-part1.x)/separation;
-    float direcy = (part2.y-part1.y)/separation;
+    // The vector that I'm proposing goes from particle 1 to particle 2
+    float dx = part2.actualPosition.x - part1.actualPosition.x;
+    float dy = part2.actualPosition.y - part1.actualPosition.y;
+    float separation = std::sqrt((dx * dx) + (dy * dy));
 
-    float delta = separation - d; //The distance that is exceeded or that need the separation to be the desired
-
-    if(iter == 0)
+    // Avoid dividing by zero by exiting the function
+    if (separation == 0.0f)
     {
-        part2.x = part2.x - delta*direcx;
-        part2.y = part2.x - delta*direcy;
+        return;
+    }
+
+    // Normalize vector
+    float direcx = dx / separation;
+    float direcy = dy / separation;
+
+    float delta = separation - d; // The distance that is exceeded
+
+    if (delta == 0)
+    {
+        return;
+    }
+
+    float adjustment = 0.5 * delta;
+
+    if (part1.fixed)
+    {
+        part2.actualPosition.x -= delta * direcx;
+        part2.actualPosition.y -= delta * direcy;
     }
     else
     {
-        part1.x = part1.x + 0.5*delta*direcx;
-        part1.y = part1.y + 0.5*delta*direcy;
-        part2.x = part2.x - 0.5*delta*direcx;
-        part2.y = part2.x - 0.5*delta*direcy;
+        part1.actualPosition.x += adjustment * direcx;
+        part1.actualPosition.y += adjustment * direcy;
+
+        part2.actualPosition.x -= adjustment * direcx;
+        part2.actualPosition.y -= adjustment * direcy;
     }
 }
 
-
-void jakobsen(std::vector<Particle> &system, const int n) //n is the number of particles
+void jakobsen(std::vector<Particle> &system, const float d, const int n) // n is the number of particles
 {
-    float d = 0.5f; //Desired position, equal to ypostion in initializeParticles
+    int m = 3000; // The number of adjusting cycles
 
-    int m = 10; //The number of adjustin cycles
-    for(int jj = 0 ; jj < m ; jj++) //adjustin cycles
+    for (int jj = 0; jj < m; jj++) // adjusting cycles
     {
-        for(int ii = 0 ; ii < n ; ii++) //Run over all couple of particles
+        for (int ii = 0; ii < (n - 1); ii++) // Run over all couple of particles
         {
-            relaxConstraint(ii, system[ii].actualPosition, system[ii + 1].actualPosition, d);
+            relaxConstraint(system[ii], system[ii + 1], d);
         }
     }
 }

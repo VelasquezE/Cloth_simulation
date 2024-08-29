@@ -13,6 +13,8 @@ add_executable(${PROJECT_NAME}
                src/physics/systemDynamics.cpp
                src/physics/updatePositions_verletIntegration.h
                src/physics/updatePositions_verletIntegration.cpp
+               src/physics/constraints_JakobsenMethod.cpp
+               src/physics/constraints_JakobsenMethod.h
                src/main.cpp
                )
 

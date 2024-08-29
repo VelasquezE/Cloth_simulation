@@ -177,6 +177,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rope_simulation.dir/build.make CMakeFiles/rope_simulation.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/physics/constraints_JakobsenMethod.o: src/physics/constraints_JakobsenMethod.cpp.o
+.PHONY : src/physics/constraints_JakobsenMethod.o
+
+# target to build an object file
+src/physics/constraints_JakobsenMethod.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rope_simulation.dir/build.make CMakeFiles/rope_simulation.dir/src/physics/constraints_JakobsenMethod.cpp.o
+.PHONY : src/physics/constraints_JakobsenMethod.cpp.o
+
+src/physics/constraints_JakobsenMethod.i: src/physics/constraints_JakobsenMethod.cpp.i
+.PHONY : src/physics/constraints_JakobsenMethod.i
+
+# target to preprocess a source file
+src/physics/constraints_JakobsenMethod.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rope_simulation.dir/build.make CMakeFiles/rope_simulation.dir/src/physics/constraints_JakobsenMethod.cpp.i
+.PHONY : src/physics/constraints_JakobsenMethod.cpp.i
+
+src/physics/constraints_JakobsenMethod.s: src/physics/constraints_JakobsenMethod.cpp.s
+.PHONY : src/physics/constraints_JakobsenMethod.s
+
+# target to generate assembly for a file
+src/physics/constraints_JakobsenMethod.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rope_simulation.dir/build.make CMakeFiles/rope_simulation.dir/src/physics/constraints_JakobsenMethod.cpp.s
+.PHONY : src/physics/constraints_JakobsenMethod.cpp.s
+
 src/physics/systemDynamics.o: src/physics/systemDynamics.cpp.o
 .PHONY : src/physics/systemDynamics.o
 
@@ -288,6 +312,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/physics/constraints_JakobsenMethod.o"
+	@echo "... src/physics/constraints_JakobsenMethod.i"
+	@echo "... src/physics/constraints_JakobsenMethod.s"
 	@echo "... src/physics/systemDynamics.o"
 	@echo "... src/physics/systemDynamics.i"
 	@echo "... src/physics/systemDynamics.s"

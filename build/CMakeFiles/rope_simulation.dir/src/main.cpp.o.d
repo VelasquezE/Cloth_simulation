@@ -358,4 +358,5 @@ CMakeFiles/rope_simulation.dir/src/main.cpp.o: \
  /usr/include/c++/11/bits/vector.tcc \
  /mnt/c/Users/estev/OneDrive\ -\ Universidad\ Nacional\ de\ Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Rope_simulation/src/physics/systemDynamics.h \
  /mnt/c/Users/estev/OneDrive\ -\ Universidad\ Nacional\ de\ Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Rope_simulation/src/physics/../rendering.h \
- /mnt/c/Users/estev/OneDrive\ -\ Universidad\ Nacional\ de\ Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Rope_simulation/src/physics/updatePositions_verletIntegration.h
+ /mnt/c/Users/estev/OneDrive\ -\ Universidad\ Nacional\ de\ Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Rope_simulation/src/physics/updatePositions_verletIntegration.h \
+ /mnt/c/Users/estev/OneDrive\ -\ Universidad\ Nacional\ de\ Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Rope_simulation/src/physics/constraints_JakobsenMethod.h

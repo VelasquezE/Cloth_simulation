@@ -139,10 +139,24 @@ CMakeFiles/rope_simulation.dir/src/physics/updatePositions_verletIntegration.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/rope_simulation.dir/src/physics/updatePositions_verletIntegration.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/estev/OneDrive - Universidad Nacional de Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Rope_simulation/src/physics/updatePositions_verletIntegration.cpp" -o CMakeFiles/rope_simulation.dir/src/physics/updatePositions_verletIntegration.cpp.s
 
+CMakeFiles/rope_simulation.dir/src/physics/constraints_JakobsenMethod.cpp.o: CMakeFiles/rope_simulation.dir/flags.make
+CMakeFiles/rope_simulation.dir/src/physics/constraints_JakobsenMethod.cpp.o: /mnt/c/Users/estev/OneDrive\ -\ Universidad\ Nacional\ de\ Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Rope_simulation/src/physics/constraints_JakobsenMethod.cpp
+CMakeFiles/rope_simulation.dir/src/physics/constraints_JakobsenMethod.cpp.o: CMakeFiles/rope_simulation.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/estev/OneDrive - Universidad Nacional de Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Rope_simulation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/rope_simulation.dir/src/physics/constraints_JakobsenMethod.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rope_simulation.dir/src/physics/constraints_JakobsenMethod.cpp.o -MF CMakeFiles/rope_simulation.dir/src/physics/constraints_JakobsenMethod.cpp.o.d -o CMakeFiles/rope_simulation.dir/src/physics/constraints_JakobsenMethod.cpp.o -c "/mnt/c/Users/estev/OneDrive - Universidad Nacional de Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Rope_simulation/src/physics/constraints_JakobsenMethod.cpp"
+
+CMakeFiles/rope_simulation.dir/src/physics/constraints_JakobsenMethod.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/rope_simulation.dir/src/physics/constraints_JakobsenMethod.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/estev/OneDrive - Universidad Nacional de Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Rope_simulation/src/physics/constraints_JakobsenMethod.cpp" > CMakeFiles/rope_simulation.dir/src/physics/constraints_JakobsenMethod.cpp.i
+
+CMakeFiles/rope_simulation.dir/src/physics/constraints_JakobsenMethod.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/rope_simulation.dir/src/physics/constraints_JakobsenMethod.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/estev/OneDrive - Universidad Nacional de Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Rope_simulation/src/physics/constraints_JakobsenMethod.cpp" -o CMakeFiles/rope_simulation.dir/src/physics/constraints_JakobsenMethod.cpp.s
+
 CMakeFiles/rope_simulation.dir/src/main.cpp.o: CMakeFiles/rope_simulation.dir/flags.make
 CMakeFiles/rope_simulation.dir/src/main.cpp.o: /mnt/c/Users/estev/OneDrive\ -\ Universidad\ Nacional\ de\ Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Rope_simulation/src/main.cpp
 CMakeFiles/rope_simulation.dir/src/main.cpp.o: CMakeFiles/rope_simulation.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/estev/OneDrive - Universidad Nacional de Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Rope_simulation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/rope_simulation.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/estev/OneDrive - Universidad Nacional de Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Rope_simulation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/rope_simulation.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rope_simulation.dir/src/main.cpp.o -MF CMakeFiles/rope_simulation.dir/src/main.cpp.o.d -o CMakeFiles/rope_simulation.dir/src/main.cpp.o -c "/mnt/c/Users/estev/OneDrive - Universidad Nacional de Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Rope_simulation/src/main.cpp"
 
 CMakeFiles/rope_simulation.dir/src/main.cpp.i: cmake_force
@@ -160,6 +174,7 @@ rope_simulation_OBJECTS = \
 "CMakeFiles/rope_simulation.dir/src/shaders/Shader.cpp.o" \
 "CMakeFiles/rope_simulation.dir/src/physics/systemDynamics.cpp.o" \
 "CMakeFiles/rope_simulation.dir/src/physics/updatePositions_verletIntegration.cpp.o" \
+"CMakeFiles/rope_simulation.dir/src/physics/constraints_JakobsenMethod.cpp.o" \
 "CMakeFiles/rope_simulation.dir/src/main.cpp.o"
 
 # External object files for target rope_simulation
@@ -170,12 +185,13 @@ rope_simulation: CMakeFiles/rope_simulation.dir/src/glad.c.o
 rope_simulation: CMakeFiles/rope_simulation.dir/src/shaders/Shader.cpp.o
 rope_simulation: CMakeFiles/rope_simulation.dir/src/physics/systemDynamics.cpp.o
 rope_simulation: CMakeFiles/rope_simulation.dir/src/physics/updatePositions_verletIntegration.cpp.o
+rope_simulation: CMakeFiles/rope_simulation.dir/src/physics/constraints_JakobsenMethod.cpp.o
 rope_simulation: CMakeFiles/rope_simulation.dir/src/main.cpp.o
 rope_simulation: CMakeFiles/rope_simulation.dir/build.make
 rope_simulation: /usr/lib/x86_64-linux-gnu/libGLX.so
 rope_simulation: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 rope_simulation: CMakeFiles/rope_simulation.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/mnt/c/Users/estev/OneDrive - Universidad Nacional de Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Rope_simulation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable rope_simulation"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/mnt/c/Users/estev/OneDrive - Universidad Nacional de Colombia/Universidad/02_Física/SemestreV/Programación_e_intro_métodos_numéricos/Proyecto_final/Rope_simulation/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable rope_simulation"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rope_simulation.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

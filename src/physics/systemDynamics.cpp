@@ -18,6 +18,11 @@ void initializeParticles(std::vector<Particle> &system, const float particleSepa
         system[ii].actualPosition.y = yPosition;
 
         yPosition -= particleSeparation;
+
+        if (ii == (n - 1))
+        {
+            system[ii].initialVelocity.x = 4.5f;
+        }
     }
 }
 

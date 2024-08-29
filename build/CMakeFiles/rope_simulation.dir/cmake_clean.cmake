@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/rope_simulation.dir/src/glad.c.o.d"
   "CMakeFiles/rope_simulation.dir/src/main.cpp.o"
   "CMakeFiles/rope_simulation.dir/src/main.cpp.o.d"
+  "CMakeFiles/rope_simulation.dir/src/physics/constraints_JakobsenMethod.cpp.o"
+  "CMakeFiles/rope_simulation.dir/src/physics/constraints_JakobsenMethod.cpp.o.d"
   "CMakeFiles/rope_simulation.dir/src/physics/systemDynamics.cpp.o"
   "CMakeFiles/rope_simulation.dir/src/physics/systemDynamics.cpp.o.d"
   "CMakeFiles/rope_simulation.dir/src/physics/updatePositions_verletIntegration.cpp.o"
