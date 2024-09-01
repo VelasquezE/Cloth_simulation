@@ -12,5 +12,17 @@ Simulate a rope under the effect of gravity and the inner interactions between t
 5. Visualize the movement of the rope using OpenGL and allowing the interaction with the user
 
 # Windows building
+All relevant libraries are found in /dependencies. It is necessary to download and configure CMake
+(https://cmake.org/download/). Run CMake script and generate project of choice.
 
-# Linux building
+# Linux/WSL building
+It is necessary to have CMake, Git and the required packages: Using root (sudo) and type ```apt-get install libsoil-dev
+libglm-dev libglew-dev libglfw3-dev```
+
+### Build through CMake command line:
+```
+cd /path/to
+mkdir build && cd build
+cmake ..
+make
+```
