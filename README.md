@@ -1,5 +1,5 @@
 # Rope simulation
-Final project for Introduction to C++ and Numerical Methods.
+Final project for Introduction to C++ and Numerical Methods. GitHub repository: https://github.com/VelasquezE/Rope_simulation.
 
 ### General objective
 Simulate a rope under the effect of gravity and the inner interactions between the segments. 
