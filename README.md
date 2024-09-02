@@ -21,7 +21,7 @@ libglm-dev libglew-dev libglfw3-dev```
 
 ### Build through CMake command line:
 ```
-cd /path/to
+cd /path/to/Rope_simulation
 mkdir build && cd build
 cmake ..
 make
