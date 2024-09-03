@@ -31,6 +31,11 @@ void relaxConstraint(Particle &part1, Particle &part2, const float d)
         part2.actualPosition.x -= delta * direcx;
         part2.actualPosition.y -= delta * direcy;
     }
+    else if (part2.fixed)
+    {
+        part1.actualPosition.x += delta * direcx;
+        part1.actualPosition.y += delta * direcy;
+    }
     else
     {
         part1.actualPosition.x += adjustment * direcx;
